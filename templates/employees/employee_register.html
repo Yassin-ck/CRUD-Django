@@ -10,14 +10,13 @@
     <div class="col-md-8">{{form.position|as_crispy_field}}</div>
   </div>
   <div class="row">
-    <div class="col-md-8">  
-      <button type="submit" class="btn btn-success btn-block btn-lg "><i class="fas fa-database"></i> Submit</button>
-    </div>
-        <div class="col-md-4">
-         <a href="{% url 'employee_list' %}" class="btn btn-secondary btn-lg btn-block ">
+    
+      <button type="submit" class="btn btn-success btn-block btn-lg col-md-8 "><i class="fas fa-database"></i> Submit</button>
+   
+         <a href="{% url 'employee_list' %}" class="btn btn-secondary btn-lg btn-block col-md-4">
           <i class="fas fa-stream"></i> Back to list
         </a>
-       </div>
+       
   </div>
 </form>
 {% endblock content %}

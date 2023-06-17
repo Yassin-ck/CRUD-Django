@@ -20,7 +20,7 @@
                 <td>{{employee.mobile}}</td>
                 <td>{{employee.position}}</td>
                 <td>
-                    <a href="{% url 'employee_update' employee.id %}" class="btn text-secondary px-0">
+                    <a href="{% url 'employee_update' employee.id %}" class="btn text-secondary ">
                         <i class="far fa-edit fa-lg "></i>
                     </a>
                         <form action="{% url 'employee_delete' employee.id %}" method='post' class="d-inline">

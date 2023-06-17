@@ -5,15 +5,15 @@
   {% csrf_token %} 
   {{form.fullname|as_crispy_field}}
   {{form.mobile|as_crispy_field}}
-  <div class="row">
+  <div class="row mb-4">
     <div class="col-md-4">{{form.emp_code|as_crispy_field}}</div>
     <div class="col-md-8">{{form.position|as_crispy_field}}</div>
   </div>
   <div class="row">
     
-      <button type="submit" class="btn btn-success btn-block btn-lg col-md-8 "><i class="fas fa-database"></i> Submit</button>
+      <button type="submit" class="btn btn-success btn-block btn-lg col-md-8 me-3 ms-2 "><i class="fas fa-database"></i> Submit</button>
    
-         <a href="{% url 'employee_list' %}" class="btn btn-secondary btn-lg btn-block col-md-4">
+         <a href="{% url 'employee_list' %}" class="btn btn-secondary btn-lg btn-block col-md-3 ms-5">
           <i class="fas fa-stream"></i> Back to list
         </a>
        

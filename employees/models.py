@@ -12,3 +12,6 @@ class Employee(models.Model):
     emp_code = models.CharField(max_length=5)
     mobile = models.CharField(max_length=15)
     position = models.ForeignKey(Position,on_delete=models.CASCADE)
+
+
+    
